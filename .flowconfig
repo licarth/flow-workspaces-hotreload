@@ -3,6 +3,7 @@
 [include]
 
 [libs]
+./packages/tools/src/
 
 [lints]
 
