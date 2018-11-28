@@ -1,0 +1,21 @@
+{
+  "name": "flow-workspaces",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "flow-bin": "^0.87.0",
+    "flow-mono-cli": "^1.4.3"
+  },
+  "scripts": {
+    "app": "yarn workspace app",
+    "tools": "yarn workspace tools",
+    "flow-create-symlinks": "flow-mono create-symlinks .flowconfig",
+    "flow-typed-install": "flow-mono install-types",
+    "flow": "yarn flow-create-symlinks && yarn tools flow && yarn app flow"
+  }
+}
