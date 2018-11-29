@@ -21,7 +21,7 @@ To make flow work with yarn workspaces, I'm using `flow-mono`.
 - `yarn flow` executes `flow-mono create-symlinks` and `flow` on both packages `tools` and `app`.
 
 ### Goal
-🚩 **See flow errors when we change** 🚩 
+🚩 **See flow errors in `app/src/index.js` when we change method definition in `tools/src/index.js` without restarting flow server** 🚩 
 
 ### What I've tried
 1. Copy sources as `*.js.flow` files near babel-transpiled files in `lib/` with `flow-copy-source`. No hot reloading : flow server does not pick the new files on change. `killall flow` and editing flow config are the only ways I found to make flow pick the new files so far.
