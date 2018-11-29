@@ -1,9 +1,9 @@
 [ignore]
 
 [include]
+../tools/lib/**
 
 [libs]
-../tools/src
 
 [lints]
 

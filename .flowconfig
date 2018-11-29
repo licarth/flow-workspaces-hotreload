@@ -3,10 +3,10 @@
 [include]
 
 [libs]
-./packages/tools/src/
 
 [lints]
 
 [options]
 
 [strict]
+
