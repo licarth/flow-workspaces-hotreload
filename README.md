@@ -10,8 +10,8 @@ In `./packages/tools/src/index.js` you will find a flow-typed method called `com
 |  ./packages/tools    | +-----------> | ./packages/app      |
 |                      |               |                     |
 |                flow  |               |               flow  |
-+----------------------+               |   create-react-app  |
-                                       +---------------------+
+|              mathjs  |               |   create-react-app  |
++----------------------+               +---------------------+
 ```
 
 Both project use flow for type checking.
