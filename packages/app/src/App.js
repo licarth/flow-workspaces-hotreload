@@ -11,8 +11,7 @@ class App extends Component<Props> {
     return (
       <div className="App">
         <header className="App-header">
-          <p>2*2={computeSquare(2)}</p>
-          <p>2*2={computeSquare("a")}</p>
+          <p>2²={computeSquare(2)}</p>
         </header>
       </div>
     );
