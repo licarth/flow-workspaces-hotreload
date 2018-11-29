@@ -7,9 +7,11 @@ In `./packages/tools/src/index.js` you will find a flow-typed method called `com
 ```
 +----------------------+               +---------------------+
 |                      |               |                     |
-|  tools               | +-----------> |       app           |
+|  ./packages/tools    | +-----------> | ./packages/app      |
 |                      |               |                     |
-+----------------------+               +---------------------+
+|                flow  |               |               flow  |
++----------------------+               |   create-react-app  |
+                                       +---------------------+
 ```
 
 Both project use flow for type checking.
